@@ -1,0 +1,17 @@
+@import "./common/var.scss";
+[class*="ins-col-"] {
+  float: left;
+  box-sizing: border-box;
+}
+
+@for $i from 1 to 25 {
+  .ins-col-#{$i} {
+    width: calc(#{$i} / 24 * 100%);
+  }
+}
+
+@for $i from 1 to 25 {
+  .ins-col-offset-#{$i} {
+    margin-left: calc(#{$i} / 24 * 100%);
+  }
+}

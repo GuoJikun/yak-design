@@ -2,6 +2,7 @@
 export const oneOf = <T>(value: T, validList: Array<T>): boolean => {
   return validList.includes(value);
 };
+
 // ui库前缀
 export const prefix = "yak";
 

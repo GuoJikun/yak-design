@@ -10,6 +10,5 @@ export default defineConfig({
       pkg: resolve(__dirname, "packages"),
       "@": resolve(__dirname, "src"),
     },
-    extensions: ["ts", "tsx", "js"],
   },
 });

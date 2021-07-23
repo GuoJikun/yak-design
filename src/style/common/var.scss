@@ -31,69 +31,277 @@ $ins--color-white: #ffffff !default;
 $ins--color-black: #000000 !default;
 
 $ins--color-primary: #409eff !default;
-$ins--color-primary-light-1: mix($ins--color-white, $ins--color-primary, 10%) !default; /* 53a8ff */
-$ins--color-primary-light-2: mix($ins--color-white, $ins--color-primary, 20%) !default; /* 66b1ff */
-$ins--color-primary-light-3: mix($ins--color-white, $ins--color-primary, 30%) !default; /* 79bbff */
-$ins--color-primary-light-4: mix($ins--color-white, $ins--color-primary, 40%) !default; /* 8cc5ff */
-$ins--color-primary-light-5: mix($ins--color-white, $ins--color-primary, 50%) !default; /* a0cfff */
-$ins--color-primary-light-6: mix($ins--color-white, $ins--color-primary, 60%) !default; /* b3d8ff */
-$ins--color-primary-light-7: mix($ins--color-white, $ins--color-primary, 70%) !default; /* c6e2ff */
-$ins--color-primary-light-8: mix($ins--color-white, $ins--color-primary, 80%) !default; /* d9ecff */
-$ins--color-primary-light-9: mix($ins--color-white, $ins--color-primary, 90%) !default; /* ecf5ff */
+$ins--color-primary-light-1: mix(
+  $ins--color-white,
+  $ins--color-primary,
+  10%
+) !default; /* 53a8ff */
+$ins--color-primary-light-2: mix(
+  $ins--color-white,
+  $ins--color-primary,
+  20%
+) !default; /* 66b1ff */
+$ins--color-primary-light-3: mix(
+  $ins--color-white,
+  $ins--color-primary,
+  30%
+) !default; /* 79bbff */
+$ins--color-primary-light-4: mix(
+  $ins--color-white,
+  $ins--color-primary,
+  40%
+) !default; /* 8cc5ff */
+$ins--color-primary-light-5: mix(
+  $ins--color-white,
+  $ins--color-primary,
+  50%
+) !default; /* a0cfff */
+$ins--color-primary-light-6: mix(
+  $ins--color-white,
+  $ins--color-primary,
+  60%
+) !default; /* b3d8ff */
+$ins--color-primary-light-7: mix(
+  $ins--color-white,
+  $ins--color-primary,
+  70%
+) !default; /* c6e2ff */
+$ins--color-primary-light-8: mix(
+  $ins--color-white,
+  $ins--color-primary,
+  80%
+) !default; /* d9ecff */
+$ins--color-primary-light-9: mix(
+  $ins--color-white,
+  $ins--color-primary,
+  90%
+) !default; /* ecf5ff */
 /// color|1|SecondaryColor|1
 $ins--color-success: #67c23a !default;
-$ins--color-success-light-1: mix($ins--color-white, $ins--color-success, 10%) !default; /* 53a8ff */
-$ins--color-success-light-2: mix($ins--color-white, $ins--color-success, 20%) !default; /* 66b1ff */
-$ins--color-success-light-3: mix($ins--color-white, $ins--color-success, 30%) !default; /* 79bbff */
-$ins--color-success-light-4: mix($ins--color-white, $ins--color-success, 40%) !default; /* 8cc5ff */
-$ins--color-success-light-5: mix($ins--color-white, $ins--color-success, 50%) !default; /* a0cfff */
-$ins--color-success-light-6: mix($ins--color-white, $ins--color-success, 60%) !default; /* b3d8ff */
-$ins--color-success-light-7: mix($ins--color-white, $ins--color-success, 70%) !default; /* c6e2ff */
-$ins--color-success-light-8: mix($ins--color-white, $ins--color-success, 80%) !default; /* d9ecff */
-$ins--color-success-light-9: mix($ins--color-white, $ins--color-success, 90%) !default; /* ecf5ff */
+$ins--color-success-light-1: mix(
+  $ins--color-white,
+  $ins--color-success,
+  10%
+) !default; /* 53a8ff */
+$ins--color-success-light-2: mix(
+  $ins--color-white,
+  $ins--color-success,
+  20%
+) !default; /* 66b1ff */
+$ins--color-success-light-3: mix(
+  $ins--color-white,
+  $ins--color-success,
+  30%
+) !default; /* 79bbff */
+$ins--color-success-light-4: mix(
+  $ins--color-white,
+  $ins--color-success,
+  40%
+) !default; /* 8cc5ff */
+$ins--color-success-light-5: mix(
+  $ins--color-white,
+  $ins--color-success,
+  50%
+) !default; /* a0cfff */
+$ins--color-success-light-6: mix(
+  $ins--color-white,
+  $ins--color-success,
+  60%
+) !default; /* b3d8ff */
+$ins--color-success-light-7: mix(
+  $ins--color-white,
+  $ins--color-success,
+  70%
+) !default; /* c6e2ff */
+$ins--color-success-light-8: mix(
+  $ins--color-white,
+  $ins--color-success,
+  80%
+) !default; /* d9ecff */
+$ins--color-success-light-9: mix(
+  $ins--color-white,
+  $ins--color-success,
+  90%
+) !default; /* ecf5ff */
 /// color|1|SecondaryColor|1
 $ins--color-warning: #e6a23c !default;
-$ins--color-warning-light-1: mix($ins--color-white, $ins--color-warning, 10%) !default; /* 53a8ff */
-$ins--color-warning-light-2: mix($ins--color-white, $ins--color-warning, 20%) !default; /* 66b1ff */
-$ins--color-warning-light-3: mix($ins--color-white, $ins--color-warning, 30%) !default; /* 79bbff */
-$ins--color-warning-light-4: mix($ins--color-white, $ins--color-warning, 40%) !default; /* 8cc5ff */
-$ins--color-warning-light-5: mix($ins--color-white, $ins--color-warning, 50%) !default; /* a0cfff */
-$ins--color-warning-light-6: mix($ins--color-white, $ins--color-warning, 60%) !default; /* b3d8ff */
-$ins--color-warning-light-7: mix($ins--color-white, $ins--color-warning, 70%) !default; /* c6e2ff */
-$ins--color-warning-light-8: mix($ins--color-white, $ins--color-warning, 80%) !default; /* d9ecff */
-$ins--color-warning-light-9: mix($ins--color-white, $ins--color-warning, 90%) !default; /* ecf5ff */
+$ins--color-warning-light-1: mix(
+  $ins--color-white,
+  $ins--color-warning,
+  10%
+) !default; /* 53a8ff */
+$ins--color-warning-light-2: mix(
+  $ins--color-white,
+  $ins--color-warning,
+  20%
+) !default; /* 66b1ff */
+$ins--color-warning-light-3: mix(
+  $ins--color-white,
+  $ins--color-warning,
+  30%
+) !default; /* 79bbff */
+$ins--color-warning-light-4: mix(
+  $ins--color-white,
+  $ins--color-warning,
+  40%
+) !default; /* 8cc5ff */
+$ins--color-warning-light-5: mix(
+  $ins--color-white,
+  $ins--color-warning,
+  50%
+) !default; /* a0cfff */
+$ins--color-warning-light-6: mix(
+  $ins--color-white,
+  $ins--color-warning,
+  60%
+) !default; /* b3d8ff */
+$ins--color-warning-light-7: mix(
+  $ins--color-white,
+  $ins--color-warning,
+  70%
+) !default; /* c6e2ff */
+$ins--color-warning-light-8: mix(
+  $ins--color-white,
+  $ins--color-warning,
+  80%
+) !default; /* d9ecff */
+$ins--color-warning-light-9: mix(
+  $ins--color-white,
+  $ins--color-warning,
+  90%
+) !default; /* ecf5ff */
 /// color|1|SecondaryColor|1
 $ins--color-danger: #f56c6c !default;
-$ins--color-danger-light-1: mix($ins--color-white, $ins--color-danger, 10%) !default; /* 53a8ff */
-$ins--color-danger-light-2: mix($ins--color-white, $ins--color-danger, 20%) !default; /* 66b1ff */
-$ins--color-danger-light-3: mix($ins--color-white, $ins--color-danger, 30%) !default; /* 79bbff */
-$ins--color-danger-light-4: mix($ins--color-white, $ins--color-danger, 40%) !default; /* 8cc5ff */
-$ins--color-danger-light-5: mix($ins--color-white, $ins--color-danger, 50%) !default; /* a0cfff */
-$ins--color-danger-light-6: mix($ins--color-white, $ins--color-danger, 60%) !default; /* b3d8ff */
-$ins--color-danger-light-7: mix($ins--color-white, $ins--color-danger, 70%) !default; /* c6e2ff */
-$ins--color-danger-light-8: mix($ins--color-white, $ins--color-danger, 80%) !default; /* d9ecff */
-$ins--color-danger-light-9: mix($ins--color-white, $ins--color-danger, 90%) !default; /* ecf5ff */
+$ins--color-danger-light-1: mix(
+  $ins--color-white,
+  $ins--color-danger,
+  10%
+) !default; /* 53a8ff */
+$ins--color-danger-light-2: mix(
+  $ins--color-white,
+  $ins--color-danger,
+  20%
+) !default; /* 66b1ff */
+$ins--color-danger-light-3: mix(
+  $ins--color-white,
+  $ins--color-danger,
+  30%
+) !default; /* 79bbff */
+$ins--color-danger-light-4: mix(
+  $ins--color-white,
+  $ins--color-danger,
+  40%
+) !default; /* 8cc5ff */
+$ins--color-danger-light-5: mix(
+  $ins--color-white,
+  $ins--color-danger,
+  50%
+) !default; /* a0cfff */
+$ins--color-danger-light-6: mix(
+  $ins--color-white,
+  $ins--color-danger,
+  60%
+) !default; /* b3d8ff */
+$ins--color-danger-light-7: mix(
+  $ins--color-white,
+  $ins--color-danger,
+  70%
+) !default; /* c6e2ff */
+$ins--color-danger-light-8: mix(
+  $ins--color-white,
+  $ins--color-danger,
+  80%
+) !default; /* d9ecff */
+$ins--color-danger-light-9: mix(
+  $ins--color-white,
+  $ins--color-danger,
+  90%
+) !default; /* ecf5ff */
 /// color|1|SecondaryColor|1
 $ins--color-info: #909399 !default;
-$ins--color-info-light-1: mix($ins--color-white, $ins--color-info, 10%) !default; /* 53a8ff */
-$ins--color-info-light-2: mix($ins--color-white, $ins--color-info, 20%) !default; /* 66b1ff */
-$ins--color-info-light-3: mix($ins--color-white, $ins--color-info, 30%) !default; /* 79bbff */
-$ins--color-info-light-4: mix($ins--color-white, $ins--color-info, 40%) !default; /* 8cc5ff */
-$ins--color-info-light-5: mix($ins--color-white, $ins--color-info, 50%) !default; /* a0cfff */
-$ins--color-info-light-6: mix($ins--color-white, $ins--color-info, 60%) !default; /* b3d8ff */
-$ins--color-info-light-7: mix($ins--color-white, $ins--color-info, 70%) !default; /* c6e2ff */
-$ins--color-info-light-8: mix($ins--color-white, $ins--color-info, 80%) !default; /* d9ecff */
-$ins--color-info-light-9: mix($ins--color-white, $ins--color-info, 90%) !default; /* ecf5ff */
+$ins--color-info-light-1: mix(
+  $ins--color-white,
+  $ins--color-info,
+  10%
+) !default; /* 53a8ff */
+$ins--color-info-light-2: mix(
+  $ins--color-white,
+  $ins--color-info,
+  20%
+) !default; /* 66b1ff */
+$ins--color-info-light-3: mix(
+  $ins--color-white,
+  $ins--color-info,
+  30%
+) !default; /* 79bbff */
+$ins--color-info-light-4: mix(
+  $ins--color-white,
+  $ins--color-info,
+  40%
+) !default; /* 8cc5ff */
+$ins--color-info-light-5: mix(
+  $ins--color-white,
+  $ins--color-info,
+  50%
+) !default; /* a0cfff */
+$ins--color-info-light-6: mix(
+  $ins--color-white,
+  $ins--color-info,
+  60%
+) !default; /* b3d8ff */
+$ins--color-info-light-7: mix(
+  $ins--color-white,
+  $ins--color-info,
+  70%
+) !default; /* c6e2ff */
+$ins--color-info-light-8: mix(
+  $ins--color-white,
+  $ins--color-info,
+  80%
+) !default; /* d9ecff */
+$ins--color-info-light-9: mix(
+  $ins--color-white,
+  $ins--color-info,
+  90%
+) !default; /* ecf5ff */
 
-$ins--color-success-light: mix($ins--color-white, $ins--color-success, 80%) !default;
-$ins--color-warning-light: mix($ins--color-white, $ins--color-warning, 80%) !default;
-$ins--color-danger-light: mix($ins--color-white, $ins--color-danger, 80%) !default;
+$ins--color-success-light: mix(
+  $ins--color-white,
+  $ins--color-success,
+  80%
+) !default;
+$ins--color-warning-light: mix(
+  $ins--color-white,
+  $ins--color-warning,
+  80%
+) !default;
+$ins--color-danger-light: mix(
+  $ins--color-white,
+  $ins--color-danger,
+  80%
+) !default;
 $ins--color-info-light: mix($ins--color-white, $ins--color-info, 80%) !default;
 
-$ins--color-success-lighter: mix($ins--color-white, $ins--color-success, 90%) !default;
-$ins--color-warning-lighter: mix($ins--color-white, $ins--color-warning, 90%) !default;
-$ins--color-danger-lighter: mix($ins--color-white, $ins--color-danger, 90%) !default;
-$ins--color-info-lighter: mix($ins--color-white, $ins--color-info, 90%) !default;
+$ins--color-success-lighter: mix(
+  $ins--color-white,
+  $ins--color-success,
+  90%
+) !default;
+$ins--color-warning-lighter: mix(
+  $ins--color-white,
+  $ins--color-warning,
+  90%
+) !default;
+$ins--color-danger-lighter: mix(
+  $ins--color-white,
+  $ins--color-danger,
+  90%
+) !default;
+$ins--color-info-lighter: mix(
+  $ins--color-white,
+  $ins--color-info,
+  90%
+) !default;
 
 /// color|1|FontColor|2
 $ins--color-text-primary: #303133 !default;
@@ -117,8 +325,10 @@ $ins--border-color-extra-light: #f2f6fc !default;
 $ins--all-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) !default;
 $ins--fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
 $ins--fade-linear-transition: opacity 200ms linear !default;
-$ins--md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1), opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
-$ins--border-transition-base: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !default;
+$ins--md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1),
+  opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$ins--border-transition-base: border-color 0.2s
+  cubic-bezier(0.645, 0.045, 0.355, 1) !default;
 $ins--color-transition-base: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !default;
 
 /* Typography font

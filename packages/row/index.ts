@@ -1,7 +1,7 @@
-import Row from "./src/row.vue";
+import Row from "./src/index.vue";
 
 Row.install = (app: any): void => {
-    app.component(Row.name, Row);
+  app.component(Row.name, Row);
 };
 
 export default Row;
