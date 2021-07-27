@@ -1,13 +1,13 @@
-@import "icon/icon.scss";
-.ins-icon {
-    display: inline-block;
+@import "./icon/icon.scss";
+.yak-icon {
+  display: inline-block;
 }
 .is-spin {
-    transition: 0.3s;
-    animation: spin 1s linear infinite;
+  transition: 0.3s;
+  animation: spin 1s linear infinite;
 }
 @keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }

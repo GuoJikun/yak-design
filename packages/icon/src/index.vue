@@ -1,13 +1,13 @@
 <template>
   <span
-    :class="['ins-icon', names, { 'is-spin': spin }]"
+    :class="['yak-icon', names, { 'is-spin': spin }]"
     :style="styles"
   ></span>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-const prefix = "prefix";
+const prefix = "yak";
 
 export default defineComponent({
   name: `${prefix}Icon`,
@@ -27,7 +27,7 @@ export default defineComponent({
   computed: {
     names(): string {
       if (this.name) {
-        return `ins-icon-${this.name}`;
+        return `yak-icon-${this.name}`;
       }
       return "";
     },
@@ -53,19 +53,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style>
-@import url("../../../style/icon/icon.css");
-.ins-icon {
-  display: inline-block;
-}
-.is-spin {
-  transition: 0.3s;
-  animation: spin 1s linear infinite;
-}
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-</style>

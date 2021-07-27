@@ -26,8 +26,8 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-const prefix = "prefix";
-import Icon from "pkg/icon/index.vue";
+const prefix = "yak";
+import Icon from "pkg/icon/src/index.vue";
 
 export default defineComponent({
   name: `${prefix}Button`,

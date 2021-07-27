@@ -20,6 +20,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
+    "src/**/*.md",
     "packages/**/*.ts",
     "packages/**/*.d.ts",
     "packages/**/*.tsx",
