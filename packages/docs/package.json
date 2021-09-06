@@ -1,0 +1,18 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "yak ui的文档",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress dev src"
+  },
+  "author": "GuoJiKun",
+  "license": "MIT",
+  "dependencies": {
+    "yak-ui": "workspace:/packages/yak-ui"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.25"
+  }
+}
