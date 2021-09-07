@@ -23,9 +23,8 @@
           </div>
         </div>
         <ul ref="scrollbar" class="ins-date-picker-day">
-          <template v-for="(item, i) in dayList">
+          <template v-for="(item, i) in dayList" :key="i">
             <li
-              :key="i"
               :class="[
                 'ins-date-picker-day-item',
                 { 'ins-date-picker-day-item-other': item.type === 'other' },
@@ -40,11 +39,12 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from "vue";
 import { prefix } from "../../../utils/utils.js";
 import dayjs from "dayjs";
-import Clickoutside from "@/directives/clickoutside.js";
-export default {
+import Clickoutside from "../../..//directives/clickoutside.js";
+export default defineComponent({
   name: `${prefix}DatePicker`,
   directives: { Clickoutside },
   model: {
@@ -63,12 +63,12 @@ export default {
   },
   data() {
     return {
-      month: "",
-      day: "",
-      year: "",
+      month: 0,
+      day: 0,
+      year: 0,
       curVal: "",
       label: "",
-      visiable: "",
+      visiable: false,
       dayList: [],
     };
   },
@@ -85,14 +85,14 @@ export default {
       this.visiable = true;
     },
     init() {
-      const year = this.getYear;
-      const month = this.getMonth;
-      this.dayList = this.renderDayPane(year, month);
+      const year: any = this.getYear;
+      const month: any = this.getMonth;
+      this.dayList = this.renderDayPane(year, month) as any;
     },
-    isLeapYear(year) {
+    isLeapYear(year: number) {
       return year % 4 === 0 && year % 100 !== 0;
     },
-    getDayCountByMonth(isLeapYear, month = 1) {
+    getDayCountByMonth(isLeapYear: boolean, month = 1) {
       if (month === 4 || month === 6 || month === 9 || month === 11) {
         return 30;
       } else if (month === 2) {
@@ -119,7 +119,7 @@ export default {
       }
       this.month = month + 1;
     },
-    renderDayPane(year, month) {
+    renderDayPane(year: number, month: number) {
       const isLeapYear = this.isLeapYear(year);
       const day = this.getDayCountByMonth(isLeapYear, month);
       const prevDay = this.getDayCountByMonth(isLeapYear, month - 1);
@@ -148,14 +148,14 @@ export default {
       }
       return [...prevDayList, ...dayList, ...nextDayList];
     },
-    curDate(t) {
+    curDate(t: any) {
       if (t === undefined) {
         return new Date();
       } else {
         return new Date(t);
       }
     },
-    isFalse(val) {
+    isFalse(val: any) {
       return val === undefined || val === "" || val === false || val === null;
     },
   },
@@ -167,7 +167,7 @@ export default {
         if (this.format) {
           return dayjs(this.value).format(this.format);
         } else {
-          return new Date(this.value);
+          return new Date(this.value as any);
         }
       }
       console.log(this.value, typeof this.value, 2);
@@ -184,7 +184,7 @@ export default {
         : dayjs(this.getCurrDateLabel).format("MM");
     },
   },
-};
+});
 </script>
 
 <style lang="scss">

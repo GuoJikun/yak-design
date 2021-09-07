@@ -26,7 +26,7 @@
 <script lang="ts">
 import { prefix } from "../../../utils/utils";
 import { defineComponent } from "vue";
-import InsButton from "@/components/button/index";
+import InsButton from "../../button/index";
 
 export default defineComponent({
   name: `${prefix}Modal`,

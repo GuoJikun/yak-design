@@ -70,7 +70,7 @@ export default defineComponent({
       return [].concat(formRules || []);
     },
     // 只支持 blur 和 change，所以过滤出符合要求的 rule 规则
-    getFilteredRule(trigger) {
+    getFilteredRule(trigger: any) {
       const rules = this.getRules();
       return rules.filter(
         (rule) => !rule.trigger || rule.trigger.indexOf(trigger) !== -1

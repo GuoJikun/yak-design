@@ -21,7 +21,7 @@
 
 <script lang="ts">
 import { prefix } from "../../../utils/utils";
-import InsIcon from "@/components/icon/index";
+import InsIcon from "../../icon/index";
 import { defineComponent, onMounted, reactive, toRefs } from "vue";
 
 export default defineComponent({

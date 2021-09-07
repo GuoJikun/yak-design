@@ -37,8 +37,8 @@
 </template>
 <script lang="ts">
 import { prefix } from "../../../utils/utils";
-import Clickoutside from "@/directives/clickoutside";
-import InsInput from "@/components/input";
+import Clickoutside from "../../../directives/clickoutside";
+import InsInput from "../../input";
 import { defineComponent, reactive, ref, toRefs } from "vue";
 import { createPopper } from "@popperjs/core";
 

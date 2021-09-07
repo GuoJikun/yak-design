@@ -17,7 +17,7 @@
   "devDependencies": {},
   "scripts": {
     "dev": "pnpm run lib & pnpm run style & pnpm run docs",
-    "lib": "pnpm run dev --filter yak-ui",
+    "lib": "pnpm run dev --filter @yak/yak-ui",
     "style": "pnpm run dev:style --filter yak-ui",
     "docs": "pnpm run dev --filter docs",
     "dev:docs": "pnpm run dev --dir=packages/docs",

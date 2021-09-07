@@ -19,7 +19,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { prefix, oneOf } from "../../../utils/utils";
-import InsIcon from "@/components/icon/index";
+import InsIcon from "../../icon/index";
 
 export default defineComponent({
   name: `${prefix}Tag`,

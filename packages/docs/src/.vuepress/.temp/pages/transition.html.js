@@ -27,12 +27,12 @@ export const data = {
   ],
   "filePathRelative": "transition.md",
   "git": {
-    "updatedTime": 1630912713000,
+    "updatedTime": 1630999606000,
     "contributors": [
       {
         "name": "GuoJikun",
         "email": "guojikun@y-open.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

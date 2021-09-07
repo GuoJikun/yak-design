@@ -56,7 +56,7 @@
 
 <script lang="ts">
 import { prefix } from "../../../utils/utils";
-import InsIcon from "@/components/icon/index";
+import InsIcon from "../../icon/index";
 import { computed, defineComponent, reactive, toRefs, watchEffect } from "vue";
 
 export default defineComponent({

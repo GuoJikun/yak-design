@@ -30,8 +30,8 @@
 <script lang="ts">
 import { defineComponent, inject } from "vue";
 import { prefix } from "../../../utils/utils";
-import InsCollapseTransition from "@/components/collapse-transition/index";
-import InsIcon from "@/components/icon/index";
+import InsCollapseTransition from "../../collapse-transition/index";
+import InsIcon from "../../icon/index";
 
 let uid = 0;
 
