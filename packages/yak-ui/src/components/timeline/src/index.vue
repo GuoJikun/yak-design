@@ -1,5 +1,5 @@
 <script lang="ts">
-import { prefix } from "@/utils/utils";
+import { prefix } from "../../../utils/utils";
 import { defineComponent, h } from "vue";
 
 export default defineComponent({

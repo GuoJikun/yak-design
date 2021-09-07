@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts">
-import { prefix } from "@/utils/utils";
+import { prefix } from "../../../utils/utils";
 import { defineComponent, onMounted, ref } from "vue";
 
 export default defineComponent({

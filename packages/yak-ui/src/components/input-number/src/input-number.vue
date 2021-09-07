@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { prefix } from "@/utils/utils.js";
+import { prefix } from "../../../utils/utils.js";
 import FoxIcon from "@/components/icon";
 import FoxInput from "@/components/input/src/input.vue";
 import Emitter from "@/mixins-/emitter.js";

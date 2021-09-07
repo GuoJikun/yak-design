@@ -2,7 +2,6 @@
 
 ## 基本用法
 
-<div class="mt-20"></div>
 <fox-rate v-model="value"></fox-rate>
 
 ```html
@@ -11,25 +10,27 @@
 
 ## click 选择
 
-<div class="mt-20"></div>
 <fox-rate v-model="value1" tigger="click"></fox-rate>
 
 ```html
 <fox-rate v-model="value1" tigger="click"></fox-rate>
 ```
 
-## 自定义 icon</h1>
+## 自定义 icon
 
-<div class="mt-20"></div>
 <fox-rate v-model="value1" tigger="click" icon="heart" active-icon="heart-fill"> </fox-rate>
 
 ```html
-<fox-rate v-model="value1" tigger="click" icon="heart" active-icon="heart-fill"> </fox-rate>
+<fox-rate
+  v-model="value1"
+  tigger="click"
+  icon="heart"
+  active-icon="heart-fill"
+></fox-rate>
 ```
 
 ## 只读
 
-<div class="mt-20"></div>
 <fox-rate v-model="value2" disabled></fox-rate>
 
 ```html
@@ -37,7 +38,8 @@
 ```
 
 <script>
-export default {
+import { defineComponent } from "vue";
+export default defineComponent({
     data() {
         return {
             value: 1,
@@ -75,5 +77,5 @@ export default {
             ],
         };
     },
-};
+});
 </script>

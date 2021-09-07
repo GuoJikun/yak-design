@@ -29,7 +29,7 @@
 
 <script lang="ts">
 import { defineComponent, inject } from "vue";
-import { prefix } from "@/utils/utils";
+import { prefix } from "../../../utils/utils";
 import InsCollapseTransition from "@/components/collapse-transition/index";
 import InsIcon from "@/components/icon/index";
 

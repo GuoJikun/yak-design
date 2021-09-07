@@ -36,7 +36,7 @@
   </div>
 </template>
 <script lang="ts">
-import { prefix } from "@/utils/utils";
+import { prefix } from "../../../utils/utils";
 import Clickoutside from "@/directives/clickoutside";
 import InsInput from "@/components/input";
 import { defineComponent, reactive, ref, toRefs } from "vue";

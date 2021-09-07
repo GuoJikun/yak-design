@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import { prefix } from "@/utils/utils.js";
+import { prefix } from "../../../utils/utils.js";
 export default {
   name: `${prefix}Table`,
   provide() {

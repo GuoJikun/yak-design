@@ -1,5 +1,5 @@
 {
-  "name": "yak-design",
+  "name": "yak",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -16,7 +16,16 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "pnpm run lib & pnpm run style & pnpm run docs",
+    "lib": "pnpm run dev --filter yak-ui",
+    "style": "pnpm run dev:style --filter yak-ui",
+    "docs": "pnpm run dev --filter docs",
+    "dev:docs": "pnpm run dev --dir=packages/docs",
+    "dev:lib": "pnpm run dev --dir=packages/yak-ui",
+    "dev:lib:style": "pnpm run dev:style --dir=packages/yak-ui",
+    "build:docs": "pnpm run build --dir=packages/docs",
+    "build:lib": "pnpm run build --dir=packages/yak-ui",
+    "build:lib:style": "pnpm run build:style --dir=packages/yak-ui"
   },
   "repository": {
     "type": "git",

@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import { prefix } from "@/utils/utils.js";
+import { prefix } from "../../../utils/utils.js";
 import dayjs from "dayjs";
 import Clickoutside from "@/directives/clickoutside.js";
 export default {

@@ -55,7 +55,7 @@
 </template>
 
 <script lang="ts">
-import { prefix } from "@/utils/utils";
+import { prefix } from "../../../utils/utils";
 import InsIcon from "@/components/icon/index";
 import { computed, defineComponent, reactive, toRefs, watchEffect } from "vue";
 

@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts">
-import { prefix } from "@/utils/utils";
+import { prefix } from "../../../utils/utils";
 import AsyncValidator from "async-validator";
 import { defineComponent, inject, onMounted, reactive, toRefs } from "vue";
 

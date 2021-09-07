@@ -1,8 +1,8 @@
 import { App } from "vue";
-import Button from "@/components/button/src/index.vue";
-import Icon from "@/components/icon/src/index.vue";
-import Row from "@/components/row/src/index.vue";
-import Col from "@/components/col/src/index.vue";
+import Button from "./components/button/src/index.vue";
+import Icon from "./components/icon/src/index.vue";
+import Row from "./components/row/src/index.vue";
+import Col from "./components/col/src/index.vue";
 // import Icon from "./button/src/index.vue";
 // import Icon from "./button/src/index.vue";
 

@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import { prefix, typeOf } from "@/utils/utils";
+import { prefix, typeOf } from "../../../utils/utils";
 import { computed, defineComponent, inject, onMounted } from "vue";
 
 export default defineComponent({

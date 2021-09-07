@@ -36,32 +36,38 @@
 
 ```vue
 <template>
-    <div>
-        <fox-tag v-for="tag in tags" :key="tag.type" :type="tag.type" closable @close="handleClose(tag.name)">
-            {{ tag.name }}
-        </fox-tag>
-    </div>
+  <div>
+    <fox-tag
+      v-for="tag in tags"
+      :key="tag.type"
+      :type="tag.type"
+      closable
+      @close="handleClose(tag.name)"
+    >
+      {{ tag.name }}
+    </fox-tag>
+  </div>
 </template>
 <script>
 export default {
-    data() {
-        return {
-            tags: [
-                { name: "标签一", type: "primary" },
-                { name: "标签二", type: "success" },
-                { name: "标签四", type: "warning" },
-                { name: "标签五", type: "danger" },
-                { name: "标签三", type: "info" },
-            ],
-        };
+  data() {
+    return {
+      tags: [
+        { name: "标签一", type: "primary" },
+        { name: "标签二", type: "success" },
+        { name: "标签四", type: "warning" },
+        { name: "标签五", type: "danger" },
+        { name: "标签三", type: "info" },
+      ],
+    };
+  },
+  methods: {
+    handleClose(val) {
+      this.tags = this.tags.filter((cur) => {
+        return val != cur.name;
+      });
     },
-    methods: {
-        handleClose(val) {
-            this.tags = this.tags.filter(cur => {
-                return val != cur.name;
-            });
-        },
-    },
+  },
 };
 </script>
 ```
@@ -82,14 +88,14 @@ Tag 组件提供除了默认值以外的三种尺寸，可以在不同场景下�
 
 ```html
 <div>
-    <fox-tag size="large" closable>大型标签</fox-tag>
-    <fox-tag size="default" closable>默认标签</fox-tag>
-    <fox-tag size="small" closable>小型标签</fox-tag>
-    <fox-tag size="mini" closable>超小标签</fox-tag>
+  <fox-tag size="large" closable>大型标签</fox-tag>
+  <fox-tag size="default" closable>默认标签</fox-tag>
+  <fox-tag size="small" closable>小型标签</fox-tag>
+  <fox-tag size="mini" closable>超小标签</fox-tag>
 </div>
 ```
 
-## 不同主题</p>
+## 不同主题
 
 Tag 组件提供了三个不同的主题：dark、light 和 plain
 
@@ -120,20 +126,20 @@ Tag 组件提供了三个不同的主题：dark、light 和 plain
 
 ```html
 <div>
-    <fox-button type="text" size="small">Dark </fox-button>
-    <fox-tag theme="dark" type="primary">标签 1</fox-tag>
-    <fox-tag theme="dark" type="success">标签 2</fox-tag>
-    <fox-tag theme="dark" type="warning">标签 3</fox-tag>
-    <fox-tag theme="dark" type="danger">标签 4</fox-tag>
-    <fox-tag theme="dark" type="info">标签 5</fox-tag>
+  <fox-button type="text" size="small">Dark </fox-button>
+  <fox-tag theme="dark" type="primary">标签 1</fox-tag>
+  <fox-tag theme="dark" type="success">标签 2</fox-tag>
+  <fox-tag theme="dark" type="warning">标签 3</fox-tag>
+  <fox-tag theme="dark" type="danger">标签 4</fox-tag>
+  <fox-tag theme="dark" type="info">标签 5</fox-tag>
 </div>
 <div class="mt-20">
-    <fox-button type="text" size="small">Plain</fox-button>
-    <fox-tag theme="plain" type="primary">标签 1</fox-tag>
-    <fox-tag theme="plain" type="success">标签 2</fox-tag>
-    <fox-tag theme="plain" type="warning">标签 3</fox-tag>
-    <fox-tag theme="plain" type="danger">标签 4</fox-tag>
-    <fox-tag theme="plain" type="info">标签 5</fox-tag>
+  <fox-button type="text" size="small">Plain</fox-button>
+  <fox-tag theme="plain" type="primary">标签 1</fox-tag>
+  <fox-tag theme="plain" type="success">标签 2</fox-tag>
+  <fox-tag theme="plain" type="warning">标签 3</fox-tag>
+  <fox-tag theme="plain" type="danger">标签 4</fox-tag>
+  <fox-tag theme="plain" type="info">标签 5</fox-tag>
 </div>
 ```
 

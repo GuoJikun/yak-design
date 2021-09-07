@@ -25,16 +25,12 @@ mxui 内应用在部分组件的过渡动画，你也可以直接使用。
 <fox-button @click="show = !show">click me</fox-button>
 
 <div class="transition-parent">
-    <transition name="fox-fade-in-linear">
-        <div v-show="show" class="transition-box">
-            .fox-fade-in-linear
-        </div>
-    </transition>
-    <transition name="fox-fade-in">
-        <div v-show="show" class="transition-box">
-            .fox-fade-in
-        </div>
-    </transition>
+  <transition name="fox-fade-in-linear">
+    <div v-show="show" class="transition-box">.fox-fade-in-linear</div>
+  </transition>
+  <transition name="fox-fade-in">
+    <div v-show="show" class="transition-box">.fox-fade-in</div>
+  </transition>
 </div>
 ```
 
@@ -66,21 +62,15 @@ mxui 内应用在部分组件的过渡动画，你也可以直接使用。
 <fox-button @click="show2 = !show2">Click Me</fox-button>
 
 <div class="transition-parent">
-    <transition name="fox-zoom-in-center">
-        <div v-show="show2" class="transition-box">
-            .fox-zoom-in-center
-        </div>
-    </transition>
-    <transition name="fox-zoom-in-top">
-        <div v-show="show2" class="transition-box">
-            .fox-zoom-in-top
-        </div>
-    </transition>
-    <transition name="fox-zoom-in-bottom">
-        <div v-show="show2" class="transition-box">
-            .fox-zoom-in-bottom
-        </div>
-    </transition>
+  <transition name="fox-zoom-in-center">
+    <div v-show="show2" class="transition-box">.fox-zoom-in-center</div>
+  </transition>
+  <transition name="fox-zoom-in-top">
+    <div v-show="show2" class="transition-box">.fox-zoom-in-top</div>
+  </transition>
+  <transition name="fox-zoom-in-bottom">
+    <div v-show="show2" class="transition-box">.fox-zoom-in-bottom</div>
+  </transition>
 </div>
 ```
 
@@ -108,21 +98,18 @@ mxui 内应用在部分组件的过渡动画，你也可以直接使用。
 <fox-button @click="show3 = !show3">Click Me</fox-button>
 
 <div style="margin-top: 20px; height: 200px;">
-    <fox-collapse-transition>
-        <div v-show="show3">
-            <div class="transition-box">
-                fox-collapse-transition
-            </div>
-            <div class="transition-box">
-                fox-collapse-transition
-            </div>
-        </div>
-    </fox-collapse-transition>
+  <fox-collapse-transition>
+    <div v-show="show3">
+      <div class="transition-box">fox-collapse-transition</div>
+      <div class="transition-box">fox-collapse-transition</div>
+    </div>
+  </fox-collapse-transition>
 </div>
 ```
 
 <script>
-export default {
+import { defineComponent } from "vue";
+export default defineComponent({
     data() {
         return {
             show: true,
@@ -143,7 +130,7 @@ export default {
             this.value = false;
         },
     },
-};
+});
 </script>
 
 <style lang="scss" scoped>

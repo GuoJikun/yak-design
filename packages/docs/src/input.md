@@ -12,7 +12,7 @@
 <div class="mt-10"></div>
 <fox-input placeholder="请输入内容" disabled style="width: 200px;"></fox-input>
 
-## 可清除</h1>
+## 可清除
 
 <div class="mt-10"></div>
 <fox-input v-model="value" placeholder="请输入内容" style="width: 200px;" clearable @change="handleClose"></fox-input>
@@ -35,7 +35,8 @@ Input 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 <fox-input size="mini" placeholder="请输入内容" style="width: 180px;">超小标签</fox-input>
 
 <script>
-export default {
+import { defineComponent } from "vue";
+export default defineComponent({
     data(){
         return {
             value: ''
@@ -52,7 +53,7 @@ export default {
             this.value = false;
         }
     }
-}
+})
 </script>
 
 <style lang="scss" scoped>

@@ -15,7 +15,7 @@
 
 <script lang="ts">
 import { computed, defineComponent, reactive, toRefs, watchEffect } from "vue";
-import { getScrollWidth, prefix } from "@/utils/utils";
+import { getScrollWidth, prefix } from "../../../utils/utils";
 
 export default defineComponent({
   name: `${prefix}Drawer`,

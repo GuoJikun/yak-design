@@ -28,8 +28,8 @@
   </div>
 </template>
 <script>
-import { prefix } from "@/utils/utils.js";
-import { oneOf } from "@/utils/utils.js";
+import { prefix } from "../../../utils/utils.js";
+import { oneOf } from "../../../utils/utils.js";
 import Popper from "@/utils/vue-popper.js";
 import { transferIndex, transferIncrease } from "@/utils/transfer-queue";
 const prefixCls = "ins-tooltip";

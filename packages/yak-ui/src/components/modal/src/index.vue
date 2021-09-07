@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts">
-import { prefix } from "@/utils/utils";
+import { prefix } from "../../../utils/utils";
 import { defineComponent } from "vue";
 import InsButton from "@/components/button/index";
 

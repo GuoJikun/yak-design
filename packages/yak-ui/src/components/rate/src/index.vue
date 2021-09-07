@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts">
-import { prefix } from "@/utils/utils";
+import { prefix } from "../../../utils/utils";
 import InsIcon from "@/components/icon/index";
 import { defineComponent, onMounted, reactive, toRefs } from "vue";
 

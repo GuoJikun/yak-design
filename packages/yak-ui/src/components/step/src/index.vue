@@ -45,7 +45,7 @@
 </template>
 
 <script lang="ts">
-import { prefix } from "@/utils/utils";
+import { prefix } from "../../../utils/utils";
 import { defineComponent, inject, reactive, toRefs } from "vue";
 
 export default defineComponent({

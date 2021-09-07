@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent, inject } from "vue";
-import { prefix } from "@/utils/utils";
+import { prefix } from "../../../utils/utils";
 
 export default defineComponent({
   name: `${prefix}Header`,

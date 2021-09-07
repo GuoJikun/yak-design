@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType, ref } from "vue";
-import { prefix, oneOf } from "@/utils/utils";
+import { prefix, oneOf } from "../../../utils/utils";
 
 export default defineComponent({
   name: `${prefix}Collapse`,
