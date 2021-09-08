@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent } from "vue";
 const prefix = "yak";
 
 export default defineComponent({
@@ -25,7 +25,7 @@ export default defineComponent({
       default: "div",
     },
     gutter: {
-      type: Number as PropType<number>,
+      type: Number,
       default: 0,
     },
     flex: {

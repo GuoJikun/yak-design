@@ -9,6 +9,12 @@
 import { defineComponent } from "vue";
 const prefix = "yak";
 
+type Style = {
+  name?: string;
+  fontSize?: string | number;
+  color?: string;
+};
+
 export default defineComponent({
   name: `${prefix}Icon`,
   props: {
@@ -25,18 +31,14 @@ export default defineComponent({
     spin: Boolean,
   },
   computed: {
-    names(): string {
+    names() {
       if (this.name) {
         return `yak-icon-${this.name}`;
       }
       return "";
     },
     styles() {
-      const style: {
-        name?: string;
-        fontSize?: string | number;
-        color?: string;
-      } = {};
+      const style: Style = {};
       if (this.size) {
         const type = typeof this.size;
         if (type === "string") {

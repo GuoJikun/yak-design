@@ -53,7 +53,12 @@ export default [
         plugins: [postcssImport()],
       }),
       copy({
-        targets: [{ src: "src/style/icon/*", dest: "dist/style/icon" }],
+        targets: [
+          { src: "src/style/icon/icon.eot", dest: "dist/style/icon" },
+          { src: "src/style/icon/icon.svg", dest: "dist/style/icon" },
+          { src: "src/style/icon/icon.ttf", dest: "dist/style/icon" },
+          { src: "src/style/icon/icon.woff", dest: "dist/style/icon" },
+        ],
       }),
     ],
   },

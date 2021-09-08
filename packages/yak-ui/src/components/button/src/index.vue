@@ -27,7 +27,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 const prefix = "yak";
-import Icon from "@/icon/src/index.vue";
+import Icon from "@/components/icon/src/index.vue";
 
 export default defineComponent({
   name: `${prefix}Button`,
@@ -36,7 +36,7 @@ export default defineComponent({
     type: {
       type: String,
       default: "default",
-      validator(value: string): boolean {
+      validator: (value: string): boolean => {
         return [
           "default",
           "primary",

@@ -1,8 +1,8 @@
 import nodeResolve from "@rollup/plugin-node-resolve";
 import alias from "@rollup/plugin-alias";
 import commonjs from "@rollup/plugin-commonjs";
-import babel from "@rollup/plugin-babel";
-import { DEFAULT_EXTENSIONS } from "@babel/core";
+// import babel from "@rollup/plugin-babel";
+// import { DEFAULT_EXTENSIONS } from "@babel/core";
 import typescript from "rollup-plugin-typescript2";
 import vue from "rollup-plugin-vue";
 import { name } from "./package.json";
@@ -15,9 +15,14 @@ import copy from "rollup-plugin-copy";
 
 const file = (type) => `dist/${name}.${type}.js`;
 
+const overrides = {
+  compilerOptions: { declaration: true },
+  exclude: ["tests/**/*.ts", "tests/**/*.tsx"],
+};
+
 export default [
   {
-    input: resolve(__dirname, "./src/index.ts"),
+    input: "src/index.ts",
     output: [
       {
         name: name,
@@ -38,25 +43,20 @@ export default [
       alias({
         entries: [
           {
-            find: "yak-ui",
+            find: "@",
             replacement: resolve(__dirname, "./src"),
           },
         ],
       }),
-      nodeResolve([".js", ".ts", ".tsx"]),
+      nodeResolve(),
 
-      typescript({
-        tsconfig: "./tsconfig.json",
-        extensions: ["js", ".ts", ".tsx"],
+      typescript({ tsconfigOverride: overrides }),
+      vue(),
+      postcss({
+        extensions: [".css"],
+        extract: true,
+        plugins: [postcssImport()],
       }),
-      babel({
-        babelHelpers: "bundled",
-        extensions: [...DEFAULT_EXTENSIONS, ".ts", ".tsx"],
-      }),
-      vue({
-        defaultLang: { script: "ts" },
-      }),
-
       commonjs({
         include: ["node_modules/**", "node_modules/**/*"],
       }),
