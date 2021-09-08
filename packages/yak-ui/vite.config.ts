@@ -11,9 +11,11 @@ export default defineConfig({
   },
   plugins: [vue()],
   build: {
+    cssCodeSplit: false,
     lib: {
       entry: resolve(__dirname, "./src/components/index.ts"),
       name: "yak-ui",
+      formats: ["es", "umd"],
     },
     watch: {},
   },

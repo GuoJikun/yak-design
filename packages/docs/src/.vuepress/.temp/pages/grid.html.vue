@@ -10,109 +10,109 @@
         <p class="page-item-dec">使用单一分栏创建基础的栅格布局。</p>
     </div>
     <div class="page-item-content">
-        <fox-row class="grid">
-            <fox-col :span="24">
+        <yak-row class="grid">
+            <yak-col :span="24">
                 <div class="grid-content"></div>
-            </fox-col>
-        </fox-row>
-        <fox-row class="grid">
-            <fox-col :span="12">
+            </yak-col>
+        </yak-row>
+        <yak-row class="grid">
+            <yak-col :span="12">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-            <fox-col :span="12">
+            </yak-col>
+            <yak-col :span="12">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-        </fox-row>
-        <fox-row class="grid">
-            <fox-col :span="8">
+            </yak-col>
+        </yak-row>
+        <yak-row class="grid">
+            <yak-col :span="8">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-            <fox-col :span="8">
+            </yak-col>
+            <yak-col :span="8">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-            <fox-col :span="8">
+            </yak-col>
+            <yak-col :span="8">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-        </fox-row>
-        <fox-row class="grid">
-            <fox-col :span="6">
+            </yak-col>
+        </yak-row>
+        <yak-row class="grid">
+            <yak-col :span="6">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-            <fox-col :span="6">
+            </yak-col>
+            <yak-col :span="6">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-            <fox-col :span="6">
+            </yak-col>
+            <yak-col :span="6">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-            <fox-col :span="6">
+            </yak-col>
+            <yak-col :span="6">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-        </fox-row>
-        <fox-row class="grid">
-            <fox-col :span="4">
+            </yak-col>
+        </yak-row>
+        <yak-row class="grid">
+            <yak-col :span="4">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-            <fox-col :span="4">
+            </yak-col>
+            <yak-col :span="4">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-            <fox-col :span="4">
+            </yak-col>
+            <yak-col :span="4">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-            <fox-col :span="4">
+            </yak-col>
+            <yak-col :span="4">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-            <fox-col :span="4">
+            </yak-col>
+            <yak-col :span="4">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-            <fox-col :span="4">
+            </yak-col>
+            <yak-col :span="4">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-        </fox-row>
+            </yak-col>
+        </yak-row>
     </div>
 </div>
 <div class="page-item">
@@ -121,32 +121,32 @@
         <p class="page-item-dec">分栏之间存在间隔</p>
     </div>
     <div class="page-grid-item-content">
-        <fox-row :gutter="20">
-            <fox-col :span="6">
+        <yak-row :gutter="20">
+            <yak-col :span="6">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-            <fox-col :span="6">
+            </yak-col>
+            <yak-col :span="6">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-            <fox-col :span="6">
+            </yak-col>
+            <yak-col :span="6">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-            <fox-col :span="6">
+            </yak-col>
+            <yak-col :span="6">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-        </fox-row>
+            </yak-col>
+        </yak-row>
     </div>
 </div>
 <div class="page-item">
@@ -157,66 +157,66 @@
         </p>
     </div>
     <div class="page-grid-item-content">
-        <fox-row :gutter="20" class="grid">
-            <fox-col :span="16">
+        <yak-row :gutter="20" class="grid">
+            <yak-col :span="16">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-            <fox-col :span="8">
+            </yak-col>
+            <yak-col :span="8">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-        </fox-row>
-        <fox-row :gutter="20" class="grid">
-            <fox-col :span="8">
+            </yak-col>
+        </yak-row>
+        <yak-row :gutter="20" class="grid">
+            <yak-col :span="8">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-            <fox-col :span="8">
+            </yak-col>
+            <yak-col :span="8">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-            <fox-col :span="4">
+            </yak-col>
+            <yak-col :span="4">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-            <fox-col :span="4">
+            </yak-col>
+            <yak-col :span="4">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-        </fox-row>
-        <fox-row :gutter="20" class="grid">
-            <fox-col :span="4">
+            </yak-col>
+        </yak-row>
+        <yak-row :gutter="20" class="grid">
+            <yak-col :span="4">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-            <fox-col :span="16">
+            </yak-col>
+            <yak-col :span="16">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-            <fox-col :span="4">
+            </yak-col>
+            <yak-col :span="4">
                 <div
                     class="grid-content"
                     style="background: #d3dce6;"
                 ></div>
-            </fox-col>
-        </fox-row>
+            </yak-col>
+        </yak-row>
     </div>
 </div>
 <div class="page-item">
@@ -225,42 +225,42 @@
         <p class="page-item-dec">支持偏移指定的栏数。</p>
     </div>
     <div class="page-grid-item-content">
-        <fox-row :gutter="20" class="grid">
-            <fox-col :span="6">
+        <yak-row :gutter="20" class="grid">
+            <yak-col :span="6">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-            <fox-col :span="6" :offset="6">
+            </yak-col>
+            <yak-col :span="6" :offset="6">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-        </fox-row>
-        <fox-row :gutter="20" class="grid">
-            <fox-col :span="6" :offset="6">
+            </yak-col>
+        </yak-row>
+        <yak-row :gutter="20" class="grid">
+            <yak-col :span="6" :offset="6">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-            <fox-col :span="6" :offset="6">
+            </yak-col>
+            <yak-col :span="6" :offset="6">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-        </fox-row>
-        <fox-row :gutter="20" class="grid">
-            <fox-col :span="12" :offset="6">
+            </yak-col>
+        </yak-row>
+        <yak-row :gutter="20" class="grid">
+            <yak-col :span="12" :offset="6">
                 <div
                     class="grid-content"
                     style="background: #e5e9f2;"
                 ></div>
-            </fox-col>
-        </fox-row>
+            </yak-col>
+        </yak-row>
     </div>
 </div>
 </template>

@@ -52,7 +52,7 @@ export default defineComponent({
       type: String,
       default: "default",
       validator(value: string): boolean {
-        return ["default", "large", "small", "mini"].includes(value);
+        return ["default", "large", "small", "mini", "medium"].includes(value);
       },
     },
     disabled: {
