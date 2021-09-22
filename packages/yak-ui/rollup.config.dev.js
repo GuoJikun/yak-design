@@ -1,8 +1,9 @@
 import resolve from "@rollup/plugin-node-resolve";
-import babel from "@rollup/plugin-babel";
+// import babel from "@rollup/plugin-babel";
 import typescript from "rollup-plugin-typescript2";
 import vue from "rollup-plugin-vue";
 import { name } from "./package.json";
+import { uglify } from "rollup-plugin-uglify";
 
 // 处理scss
 import postcss from "rollup-plugin-postcss";
@@ -13,7 +14,7 @@ const file = (type) => `dist/${name}.${type}.js`;
 
 export default [
   {
-    input: "src/index.ts",
+    input: "src/components/index.ts",
     output: [
       {
         name: name,
@@ -32,12 +33,12 @@ export default [
     ],
     plugins: [
       resolve([".js", ".ts", ".tsx"]),
-      babel({ babelHelpers: "bundled" }),
       typescript({
         tsconfig: "./tsconfig.json",
         extensions: [".js", ".ts", ".tsx"],
       }),
       vue(),
+      uglify(),
     ],
     external: ["vue"],
   },
@@ -55,7 +56,6 @@ export default [
       copy({
         targets: [
           { src: "src/style/icon/icon.eot", dest: "dist/style/icon" },
-          { src: "src/style/icon/icon.svg", dest: "dist/style/icon" },
           { src: "src/style/icon/icon.ttf", dest: "dist/style/icon" },
           { src: "src/style/icon/icon.woff", dest: "dist/style/icon" },
         ],
