@@ -11,7 +11,7 @@ export default defineConfig({
   },
   plugins: [vue()],
   build: {
-    cssCodeSplit: false,
+    cssCodeSplit: true,
     lib: {
       entry: resolve(__dirname, "./src/components/index.ts"),
       name: "yak-ui",

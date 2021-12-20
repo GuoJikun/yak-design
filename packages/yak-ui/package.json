@@ -2,13 +2,16 @@
   "name": "yak-ui",
   "version": "1.0.0",
   "main": "dist/yak-ui.umd.js",
-  "module": "dist/yak-ui.umd.js",
+  "module": "dist/yak-ui.es.js",
   "exports": {
     ".": {
-      "import": "./dist/yak-ui.esm.js",
+      "import": "./dist/yak-ui.es.js",
       "require": "./dist/yak-ui.umd.js"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -17,10 +20,11 @@
     "lib:build": "rollup -c rollup.config.prod.js"
   },
   "dependencies": {
+    "@popperjs/core": "^2.10.1",
     "async-validator": "^4.0.3",
     "dayjs": "^1.10.6",
-    "vue": "^3.2.6",
-    "@popperjs/core": "^2.10.1"
+    "rollup": "^2.61.1",
+    "vue": "^3.2.6"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^3.1.5",

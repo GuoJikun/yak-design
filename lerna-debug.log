@@ -1,0 +1,14 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   scope: 'yak-ui',
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'D:\\Scoop\\apps\\nodejs-lts\\current\\bin\\node_modules\\lerna\\cli.js',
+0 silly argv   pkg: 'rullup'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath E:\private\frontend\yak-design
+3 info versioning independent
+4 error TypeError: Cannot convert undefined or null to object
+4 error     at Function.keys (<anonymous>)
+4 error     at module.exports (D:\Scoop\persist\nodejs-lts\bin\node_modules\lerna\node_modules\npm-pick-manifest\index.js:213:22)

@@ -37,7 +37,7 @@ export default [
     output: [
       {
         name: name,
-        file: file("esm"),
+        file: file("es"),
         format: "es",
       },
       {

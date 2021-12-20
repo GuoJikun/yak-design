@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
   "scripts": {
-    "dev:docs": "pnpm run dev --dir=packages/docs",
-    "dev:lib": "pnpm run dev --dir=packages/yak-ui",
-    "build:docs": "pnpm run build --dir=packages/docs",
-    "build:lib": "pnpm run build --dir=packages/yak-ui"
+    "dev:docs": "lerna run dev --scope=docs",
+    "dev:lib": "lerna run dev --scope=yak-ui",
+    "build:docs": "lerna run build --scope=docs",
+    "build:lib": "lerna run build --scope=yak-ui"
   },
   "repository": {
     "type": "git",

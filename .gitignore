@@ -3,5 +3,5 @@ node_modules
 dist
 dist-ssr
 *.local
-.cache
-.temp
+packages/docs/.vuepress/.cache/
+packages/docs/.vuepress/.temp/
